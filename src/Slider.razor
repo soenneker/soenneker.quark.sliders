@@ -67,8 +67,7 @@
 
 		var baseClasses = "form-range";
 
-		attributes["class"] = AppendToClass(attributes.GetValueOrDefault("class")
-			?.ToString(), baseClasses);
+		AppendToClassAttr(attributes, baseClasses);
 
 		attributes["min"] = Min.ToString(CultureInfo.InvariantCulture);
 		attributes["max"] = Max.ToString(CultureInfo.InvariantCulture);
