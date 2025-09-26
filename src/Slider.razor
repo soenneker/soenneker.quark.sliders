@@ -5,6 +5,7 @@
 <input type="range" @attributes="BuildAttributes()" />
 
 @code {
+	public override string? Name { get; set; } = "Slider";
 
 	[Parameter]
 	public double Value { get; set; }
